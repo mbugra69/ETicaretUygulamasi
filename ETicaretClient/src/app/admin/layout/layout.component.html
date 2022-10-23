@@ -1,5 +1,7 @@
 <app-header></app-header>
-<app-sidebar></app-sidebar>
-<app-footer></app-footer>
+<mat-drawer-container class="adminapp-container ">
+    <mat-drawer mode="side" class="admin-left-side" opened><app-sidebar></app-sidebar></mat-drawer>
+    <mat-drawer-content><router-outlet></router-outlet></mat-drawer-content>
 
-<router-outlet></router-outlet>
+  </mat-drawer-container>
+ <app-footer></app-footer> 
